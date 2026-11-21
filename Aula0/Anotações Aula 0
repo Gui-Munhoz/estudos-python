@@ -1,0 +1,35 @@
+# Aula 0: funções e variáveis
+
+## print e input
+- `print()`: mostra algo na tela.
+- `input()`: pede um valor ao usuário e sempre devolve texto (str).
+
+## Variáveis e métodos
+- Variável guarda um valor: `nome = input("Qual o seu nome? ")`
+- Métodos de texto levam parênteses e podem ser encadeados:
+  `nome = input("Qual o seu nome? ").strip().title()`
+  - `.strip()` tira os espaços das pontas
+  - `.title()` deixa a primeira letra de cada palavra maiúscula
+- Outros métodos: consultar a documentação do Python.
+
+## f-string
+- `f` antes das aspas e a variável entre chaves: `print(f"Olá, {nome}!")`
+
+## int e float
+- int: números inteiros. float: números com casas decimais.
+- Operadores: `+`, `-`, `*`, `/` (sempre dá float), `//` (só a parte inteira), `%` (resto da divisão).
+- Converter o input para fazer conta: `int(input(...))` ou `float(input(...))`
+- `round(x, 2)` arredonda para 2 casas.
+
+## Funções com def
+- `def` cria uma função reutilizável, chamada pelo nome.
+- `return` devolve o resultado para quem chamou a função.
+- Escopo: uma variável criada dentro de uma função só existe nela. Para usar o valor fora, use `return`.
+- Uma função pode chamar outra normalmente (ex.: `main()` chamando `quadrado()`).
+
+## Boas práticas
+- Código sucinto, uma responsabilidade por linha, fácil de ler.
+
+## Exercícios feitos
+- Calculadora simples, sem def e com def (main)
+- hello com nome, sem def e com def (main)
